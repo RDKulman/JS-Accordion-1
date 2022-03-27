@@ -1,0 +1,147 @@
+/* 
+  --color-mako: #424551;
+  --color-ebony: #1e212c;
+  --color-storm: #787a80;
+*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f5f7;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1260px;
+}
+
+.btn-reset {
+  margin: 0;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1e212c;
+}
+
+.title--center {
+  text-align: center;
+}
+
+.section-offer {
+  padding: 120px 0;
+  background-color: #f4f5f7;
+}
+
+.section-offer__main-title {
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.section-offer__main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-offer__section-saver {
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: 105px;
+  border-radius: 4px;
+  width: 705px;
+  height: 440px;
+}
+
+.section-offer__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-offer__content {
+  max-width: 420px;
+}
+
+.section-offer__title {
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.section-offer__list {
+}
+
+.section-offer__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.accordion {
+  padding-left: 44px;
+  background-image: url("./img/icon-plus.svg");
+  background-position: 0 10px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.accordion--active {
+  background-image: url("./img/icon-minus.svg");
+}
+
+.accordion__content {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.2s linear;
+}
+
+.accordion--active .accordion__content {
+}
+
+.accordion__title {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #1e212c;
+  transition: all 0.2s linear;
+}
+
+.accordion__title:hover {
+  color: #ff5a30;
+}
+
+.accordion__descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #787a80;
+  cursor: default;
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .section-offer__section-saver {
+    margin-bottom: 20px;
+  }
+}

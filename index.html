@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./index.css">
+
+  <title>Accordion</title>
+</head>
+
+<body>
+  <div class="site-container">
+    <div class="section-offer">
+      <div class="container">
+        <h1 class="section-offer__main-title title title--center">Simple Accordion</h1>
+        <div class="section-offer__main-content">
+          <div class="section-offer__section-saver">
+            <img src="./img/furniture.jpg" alt="Our furniture" class="section-offer__image">
+          </div>
+
+          <div class="section-offer__content">
+            <h2 class="section-offer__title title">
+              We offer
+            </h2>
+            <ul class="list-reset section-offer__list">
+              <li class="section-offer__item">
+                <div class="accordion">
+                  <h3 class="accordion__title title">Interior design of apartments</h3>
+                  <div class="accordion__content">
+                    <p class="accordion__descr">
+                      Adipiscing nunc arcu enim elit mattis eu&nbsp;placerat proin.
+                      Imperdiet elementum faucibus dignissim purus.
+                      Fusce parturient diam magna ullamcorper morbi semper massa ac&nbsp;facilisis.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="section-offer__item">
+                <div class="accordion" aria-expanded="false" data-openlist="false">
+                  <h3 class="accordion__title title">Interior design of private houses</h3>
+                  <div class="accordion__content">
+                    <p class="accordion__descr" aria-hidden="true">
+                      Adipiscing nunc arcu enim elit mattis eu&nbsp;placerat proin.
+                      Imperdiet elementum faucibus dignissim purus.
+                      Fusce parturient diam magna ullamcorper morbi semper massa ac&nbsp;facilisis.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
